@@ -74,7 +74,7 @@
     
     // Work out line width
     NSString *text = self.titleLabel.text;
-    CGSize titleLabelSize = [text sizeWithFont:self.titleLabel.font forWidth:self.titleLabel.frame.size.width lineBreakMode:UILineBreakModeWordWrap];
+    CGSize titleLabelSize = [text sizeWithFont:self.titleLabel.font forWidth:self.titleLabel.frame.size.width lineBreakMode:self.titleLabel.lineBreakMode];
     CGFloat width = titleLabelSize.width;
     
     // Work out starting point of the underline
